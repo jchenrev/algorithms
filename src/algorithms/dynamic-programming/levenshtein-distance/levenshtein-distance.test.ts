@@ -1,6 +1,6 @@
 import levenshteinDistance from "./levenshtein-distance";
 
-describe("levenshteinDistance", () => {
+describe("Levenshtein Distance", () => {
   test.each([
     ["", "", 0],
     ["a", "", 1],
