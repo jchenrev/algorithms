@@ -6,6 +6,9 @@
   "repository": "https://github.com/jchenrev/algorithms",
   "author": "jchenrev",
   "license": "MIT",
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "scripts": {
     "lint": "eslint src/**/*.ts",
     "test": "jest"
