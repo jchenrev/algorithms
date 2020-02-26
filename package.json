@@ -1,0 +1,21 @@
+{
+  "name": "algorithms",
+  "version": "0.1.0",
+  "description": "My practice for algorithms and data structure",
+  "main": "index.js",
+  "repository": "https://github.com/jchenrev/algorithms",
+  "author": "jchenrev",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-typescript": "^7.8.3",
+    "@types/jest": "^25.1.3",
+    "babel-jest": "^25.1.0",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1"
+  }
+}
