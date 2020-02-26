@@ -1,7 +1,7 @@
 {
   "name": "algorithms",
   "version": "0.1.0",
-  "description": "My practice for algorithms and data structure",
+  "description": "My practice for data structure and algorithms",
   "main": "index.js",
   "repository": "https://github.com/jchenrev/algorithms",
   "author": "jchenrev",
