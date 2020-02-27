@@ -1,4 +1,5 @@
 /**
+ * https://www.hackerrank.com/challenges/coin-change/problem
  *
  * @param n target sum
  * @param c array of available type of coins

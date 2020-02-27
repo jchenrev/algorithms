@@ -88,3 +88,31 @@ export function knapsackProblemUnboundedSpaceOptimized(
 
   return dp[maxWeight];
 }
+
+export function knapsackProblemBounded(
+  knapsackItems: Array<KnapsackItem>,
+  maxWeight: number
+): number {
+  // dp[i][j] := max value from item 0 to i, with total weight no more than j
+  const dp: Array<Array<number>> = Array(knapsackItems.length + 1)
+    .fill(undefined)
+    .map(() => Array(maxWeight + 1).fill(0));
+
+  for (let i = 0; i < knapsackItems.length; i++) {
+    for (let j = 0; j <= maxWeight; j++) {
+      const currentItem = knapsackItems[i];
+      dp[i + 1][j] = dp[i][j];
+      for (let k = 1; k <= currentItem.count; k++) {
+        if (j < k * currentItem.weight) {
+          break;
+        }
+        dp[i + 1][j] = Math.max(
+          dp[i + 1][j],
+          dp[i][j - k * currentItem.weight] + k * currentItem.value
+        );
+      }
+    }
+  }
+
+  return dp[knapsackItems.length][maxWeight];
+}

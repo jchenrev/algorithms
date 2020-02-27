@@ -33,7 +33,7 @@ describe("Coin Change", () => {
       ],
       96190959
     ]
-  ])("should solve coin change problem", (n, c, result) => {
+  ])("should solve coin change problem %#", (n, c, result) => {
     expect(getWays(n, c)).toBe(result);
   });
 });
