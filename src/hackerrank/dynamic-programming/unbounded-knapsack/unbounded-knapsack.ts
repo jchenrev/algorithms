@@ -1,11 +1,12 @@
 /**
  * https://www.hackerrank.com/challenges/unbounded-knapsack/problem
  *
- * @param {number} k
- * @param {Array<number>} arr
- * @returns {number}
+ * @param k target sum
+ * @param arr numbers to select from
+ * @returns the sum nearest to but not exceeding the target, with each of the
+ * array element appearing 0 or more times
  */
-function unboundedKnapsack(k, arr) {
+function unboundedKnapsack(k: number, arr: Array<number>): number {
   const dp = [true, ...Array(k).fill(false)];
 
   for (let i = 0; i < arr.length + 1; i++) {
@@ -18,6 +19,8 @@ function unboundedKnapsack(k, arr) {
       return k;
     }
   }
+
+  Math.min;
 
   for (let j = k; j >= 0; j--) {
     if (dp[j]) {
