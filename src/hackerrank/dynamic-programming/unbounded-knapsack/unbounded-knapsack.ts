@@ -20,8 +20,6 @@ function unboundedKnapsack(k: number, arr: Array<number>): number {
     }
   }
 
-  Math.min;
-
   for (let j = k; j >= 0; j--) {
     if (dp[j]) {
       return j;
